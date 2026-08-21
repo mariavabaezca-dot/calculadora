@@ -1,6 +1,6 @@
 Algoritmo Calculadora
 	Escribir "Bienvenidos a la calculadora de maria"
-	Escribir "En esta calculadora solo se puede operar suma, resta, multiplicacción y division, para indicar la que desea UTILIZAR digite la inicial de la operacion (S,R,M,D)"
+	Escribir "En esta calculadora solo se puede operar suma, resta, multiplicacciÃ³n y division, para indicar la que desea UTILIZAR digite la inicial de la operacion (S,R,M,D)"
 	Leer operacion
 	Mientras operacion<> "S" Y operacion<>"s"y operacion<> "R" Y operacion<>"r" y operacion<> "M" Y operacion<>"m" y operacion<> "D" Y operacion<>"d" Hacer
 		Escribir "ERROR solo puede escribir S,R,M o D."
@@ -9,7 +9,7 @@ Algoritmo Calculadora
 	FinMientras
 	Definir cantidad_de_numeros Como Entero
 	Definir num1,num2,num3 Como Real
-	Escribir "¿De cuantos numeros desea realizar la operacion? (maximo 3)"
+	Escribir "Â¿De cuantos numeros desea realizar la operacion? (maximo 3)"
 	Leer cantidad_de_numeros
 	Mientras cantidad_de_numeros<2 o cantidad_de_numeros>3 Hacer
 		Escribir "Error solo puedes elegir hasta 3 variables para operar"
@@ -24,7 +24,11 @@ Algoritmo Calculadora
 		Escribir "Digite el tercer numero a operar:"
 		Leer num3
 	FinSi
+<<<<<<< HEAD
 	si cantidad_de_numeros>=2 y cantidad_de_numeros<=3 Entonces
+=======
+si cantidad_de_numeros>=2 y cantidad_de_numeros<=3 Entonces
+>>>>>>> 33b5b04133d1023ed449635629088ab8955d263a
 	si operacion= "S" O operacion= "s" Entonces
 		si cantidad_de_numeros=3 Entonces
 			resultado<- num1+num2+num3
@@ -71,6 +75,10 @@ Algoritmo Calculadora
 	FinSi
 FinSi
 FinSi
+<<<<<<< HEAD
 FinSi
+=======
+Finsi
+>>>>>>> 33b5b04133d1023ed449635629088ab8955d263a
 
 FinAlgoritmo
