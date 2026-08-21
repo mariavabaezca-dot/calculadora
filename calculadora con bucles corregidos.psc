@@ -8,14 +8,27 @@ Algoritmo calculadora_con_bucles
 	Para i<-1 Hasta cantidad Hacer
 		Escribir "digite un numero"
 		leer numero
-		si opera=1 
-			operacion<-operacion-numero
+		Si opera = 1 Entonces
+			Si i = 1 Entonces
+				operacion <- numero
+			SiNo
+			operacion <- operacion - numero
 		FinSi
+	FinSi
 		si opera=2 
-			operacion<-operacion*numero
+			si operacion=0
+				operacion<-numero
+			SiNo
+				operacion<-operacion*numero
+			FinSi
 		FinSi
-		si opera=3 
-			operacion<-operacion/numero
+		si opera=3
+			si operacion = 0
+				operacion<-numero	
+			SiNo
+				operacion<-operacion/numero	
+			FinSi
+			
 		FinSi
 		si opera=4 
 			operacion<-operacion+numero
