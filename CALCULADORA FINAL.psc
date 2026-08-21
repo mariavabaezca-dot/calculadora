@@ -11,7 +11,7 @@ Algoritmo Calculadora
 	Definir num1,num2,num3 Como Real
 	Escribir "¿De cuantos numeros desea realizar la operacion? (maximo 3)"
 	Leer cantidad_de_numeros
-	Mientras cantidad_de_numeros<1 o cantidad_de_numeros>3 Hacer
+	Mientras cantidad_de_numeros<2 o cantidad_de_numeros>3 Hacer
 		Escribir "Error solo puedes elegir hasta 3 variables para operar"
 		Escribir "Digite nuevamente la cantidad:"
 		Leer cantidad_de_numeros
@@ -24,6 +24,7 @@ Algoritmo Calculadora
 		Escribir "Digite el tercer numero a operar:"
 		Leer num3
 	FinSi
+	si cantidad_de_numeros>=2 y cantidad_de_numeros<=3 Entonces
 	si operacion= "S" O operacion= "s" Entonces
 		si cantidad_de_numeros=3 Entonces
 			resultado<- num1+num2+num3
@@ -68,6 +69,7 @@ Algoritmo Calculadora
 			Escribir "operacion no valida" 
 		FinSi
 	FinSi
+FinSi
 FinSi
 FinSi
 
